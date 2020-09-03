@@ -1,0 +1,1720 @@
+
+<!DOCTYPE>
+<html>
+  <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-96534777-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+                gtag('config', 'UA-96534777-6', {
+            'custom_map': {
+                'dimension1': 'produto',
+                'dimension2': 'produtor',
+                'dimension3': 'afiliado',
+                'dimension4': 'tipo_Layout_Web',
+                'dimension5': 'formato_Produto',
+                'dimension6': 'tipo_Layout_Mobile'
+            },
+            cookie_flags: 'SameSite=None;Secure'
+        });
+
+        gtag('event', 'checkout_view', {
+            'produto': 'Guia do Score',
+            'produtor': 'JACKSON OLIVEIRA PEREIRA 14641647704',
+            'afiliado': '',
+            'tipo_Layout_Web': '1',
+            'formato_Produto': '2',
+            'tipo_Layout_Mobile': '1'
+        });
+            </script>
+        <meta charset="utf-8"><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true}};(window.NREUM||(NREUM={})).loader_config={xpid:"VQUDVVJRDxACV1haBQYBVQ==",licenseKey:"3d0e4a751d",applicationID:"23982763"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var i,o=t("ee"),a=t(22),c={};try{i=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,i.indexOf("dev")!==-1&&(c.dev=!0),i.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&o.on("internal-error",function(t){r(t.stack)}),c.dev&&o.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,c){try{p?p-=1:i(c||new UncaughtException(t,e,n),!0)}catch(f){try{o("ierr",[f,s.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function i(t,e){var n=e?null:s.now();o("err",[t,n])}var o=t("handle"),a=t(23),c=t("ee"),s=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(9),t(8),"addEventListener"in window&&t(5),s.xhrWrappable&&t(10),d=!0)}c.on("fn-start",function(t,e,n){d&&(p+=1)}),c.on("fn-err",function(t,e,n){d&&!n[l]&&(f(n,l,function(){return!0}),this.thrown=!0,i(n))}),c.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),c.on("internal-error",function(t){o("ierr",[t,s.now(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var i=t("ee"),o=t("handle"),a=t(9),c=t(8),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",g="pushState",y=t("loader");y.features.stn=!0,t(7),"addEventListener"in window&&t(5);var x=NREUM.o.EV;i.on(m,function(t,e){var n=t[0];n instanceof x&&(this.bstStart=y.now())}),i.on(w,function(t,e){var n=t[0];n instanceof x&&o("bst",[n,e,this.bstStart,y.now()])}),a.on(m,function(t,e,n){this.bstStart=y.now(),this.bstType=n}),a.on(w,function(t,e){o(v,[e,this.bstStart,y.now(),this.bstType])}),c.on(m,function(){this.bstStart=y.now()}),c.on(w,function(t,e){o(v,[e,this.bstStart,y.now(),"requestAnimationFrame"])}),i.on(g+p,function(t){this.time=y.now(),this.startPath=location.pathname+location.hash}),i.on(g+h,function(t){o("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){o(d,[window.performance.getEntriesByType(l)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){o(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&i(e)}function i(t){c.inPlace(t,[u,d],"-",o)}function o(t,e){return t[1]}var a=t("ee").get("events"),c=t("wrap-function")(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(i(window),i(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=o(arguments),e={};i.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var c=r.apply(this,t);return i.emit(n+"start",[t,a],c),c.then(function(t){return i.emit(n+"end",[null,t],c),t},function(t){throw i.emit(n+"end",[t],c),t})})}var i=t("ee").get("fetch"),o=t(23),a=t(22);e.exports=i;var c=window,s="fetch-",f=s+"body-",u=["arrayBuffer","blob","json","text","formData"],d=c.Request,l=c.Response,p=c.fetch,h="prototype",m="nr@context";d&&l&&p&&(a(u,function(t,e){r(d[h],e,f),r(l[h],e,f)}),r(c,"fetch",s),i.on(s+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),i.emit(s+"done",[null,e],n)}else i.emit(s+"done",[t],n)}))},{}],7:[function(t,e,n){var r=t("ee").get("history"),i=t("wrap-function")(r);e.exports=r;var o=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;o&&o.pushState&&o.replaceState&&(a=o),i.inPlace(a,["pushState","replaceState"],"-")},{}],8:[function(t,e,n){var r=t("ee").get("raf"),i=t("wrap-function")(r),o="equestAnimationFrame";e.exports=r,i.inPlace(window,["r"+o,"mozR"+o,"webkitR"+o,"msR"+o],"raf-"),r.on("raf-start",function(t){t[0]=i(t[0],"fn-")})},{}],9:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function i(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var o=t("ee").get("timer"),a=t("wrap-function")(o),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=o,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),o.on(s+u,r),o.on(c+u,i)},{}],10:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function i(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,g,"fn-",c)}function o(t){y.push(t),h&&(b?b.then(a):w?w(a):(E=-E,R.data=E))}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",g=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];e.exports=u;var x=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(v,i,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(p,x),x.prototype=p.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),o(e)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!w&&!m){var E=1,R=document.createTextNode(E);new h(a).observe(R,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],11:[function(t,e,n){function r(t){if(!c(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,f=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=p.generateSpanId(),m=p.generateTraceId(),w=Date.now(),v={spanId:h,traceId:m,timestamp:w};return(t.sameOrigin||s(t)&&l())&&(v.traceContextParentHeader=i(h,m),v.traceContextStateHeader=o(h,w,n,r,f)),(t.sameOrigin&&!u()||!t.sameOrigin&&s(t)&&d())&&(v.newrelicHeader=a(h,m,w,n,r,f)),v}function i(t,e){return"00-"+e+"-"+t+"-01"}function o(t,e,n,r,i){var o=0,a="",c=1,s="",f="";return i+"@nr="+o+"-"+c+"-"+n+"-"+r+"-"+t+"-"+a+"-"+s+"-"+f+"-"+e}function a(t,e,n,r,i,o){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var c={v:[0,1],d:{ty:"Browser",ac:r,ap:i,id:t,tr:e,ti:n}};return o&&r!==o&&(c.d.tk=o),btoa(JSON.stringify(c))}function c(t){return f()&&s(t)}function s(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var i=h(n.allowed_origins[r]);if(t.hostname===i.hostname&&t.protocol===i.protocol&&t.port===i.port){e=!0;break}}return e}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function l(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var p=t(19),h=t(13);e.exports={generateTracePayload:r,shouldGenerateTrace:c}},{}],12:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(d[r],this.listener,!1);e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):o(this,t),n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime]))}}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=s(e),t.sameOrigin=t.parsedOrigin.sameOrigin}function o(t,e){t.params.status=e.status;var n=w(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(13),f=t(11).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(17),m=t(16),w=t(14),v=window.XMLHttpRequest;a.features.xhr=!0,t(10),t(6),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,t.addEventListener("load",function(n){o(e,t)},!1),h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],i=this;if(n&&r){var o=m(r);o&&(n.txSize=o)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||i.loadCaptureCalled||(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var c=0;c<l;c++)e.addEventListener(d[c],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof v&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof v&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof v&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url&&(n=t[0].url),n&&(this.parsedOrigin=s(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var i=f(this.parsedOrigin);if(i&&(i.newrelicHeader||i.traceContextParentHeader))if("string"==typeof t[0]){var o={};for(var a in r)o[a]=r[a];o.headers=new Headers(r.headers||{}),e(o.headers,i)&&(this.dt=i),t.length>1?t[1]=o:t.push(o)}else t[0]&&t[0].headers&&e(t[0].headers,i)&&(this.dt=i)})}},{}],13:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];var e=document.createElement("a"),n=window.location,i={};e.href=t,i.port=e.port;var o=e.href.split("://");!i.port&&o[1]&&(i.port=o[1].split("/")[0].split("@").pop().split(":")[1]),i.port&&"0"!==i.port||(i.port="https"===o[0]?"443":"80"),i.hostname=e.hostname||n.hostname,i.pathname=e.pathname,i.protocol=o[0],"/"!==i.pathname.charAt(0)&&(i.pathname="/"+i.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,c=e.hostname===document.domain&&e.port===n.port;return i.sameOrigin=a&&(!e.hostname||c),"/"===i.pathname&&(r[t]=i),i}},{}],14:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?i(t.response):"text"===n||""===n||void 0===n?i(t.responseText):void 0}var i=t(16);e.exports=r},{}],15:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[f.now()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(22),c=t(23),s=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,e){u[e]=i(l+e,!0,"api")}),u.addPageAction=i(l+"addPageAction",!0),u.setCurrentRouteName=i(l+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(p+"tracer",[f.now(),t,n],r),function(){if(s.emit((i?"":"no-")+"fn-start",[f.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw s.emit("fn-err",[arguments,this,t],n),t}finally{s.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=i(p+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,f.now(),!1,e])}},{}],16:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],17:[function(t,e,n){var r=0,i=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);i&&(r=+i[1]),e.exports=r},{}],18:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof h&&!w){var e=Math.round(t.timeStamp),n={type:t.type};e<=l.now()?n.fid=l.now()-e:e>l.offset&&e<=Date.now()?(e-=l.offset,n.fid=l.now()-e):e=l.now(),w=!0,d("timing",["fi",e,n])}}function c(t){d("pageHide",[l.now(),t])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var s,f,u,d=t("handle"),l=t("loader"),p=t(21),h=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(m){}f=new PerformanceObserver(i);try{f.observe({entryTypes:["largest-contentful-paint"]})}catch(m){}u=new PerformanceObserver(o);try{u.observe({type:"layout-shift",buffered:!0})}catch(m){}}if("addEventListener"in document){var w=!1,v=["click","keydown","mousedown","pointerdown","touchstart"];v.forEach(function(t){document.addEventListener(t,a,!1)})}p(c)}},{}],19:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var i,o="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",c=0;c<o.length;c++)i=o[c],"x"===i?a+=t().toString(16):"y"===i?(i=3&t()|8,a+=i.toString(16)):a+=i;return a}function i(){return a(16)}function o(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,i=window.crypto||window.msCrypto;i&&i.getRandomValues&&Uint8Array&&(n=i.getRandomValues(new Uint8Array(31)));for(var o=[],a=0;a<t;a++)o.push(e().toString(16));return o.join("")}e.exports={generateUuid:r,generateSpanId:i,generateTraceId:o}},{}],20:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,s=c.match(a);s&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=s[1])}e.exports={agent:i,version:o,match:r}},{}],21:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],22:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],23:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],24:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?s(t,c,o):o()}function n(n,r,i,o){if(!l.aborted||o){t&&t(n,r,i);for(var a=e(i),c=m(n),s=c.length,f=0;f<s;f++)c[f].apply(a,r);var d=u[y[n]];return d&&d.push([x,n,r,a]),a}}function p(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function w(t){return d[t]=d[t]||i(n)}function v(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var g={},y={},x={on:p,addEventListener:p,removeEventListener:h,emit:n,get:w,listeners:m,context:e,buffer:v,abort:a,aborted:!1};return x}function o(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var c="nr@context",s=t("gos"),f=t(22),u={},d={},l=e.exports=i();l.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!E++){var t=b.info=NREUM.info,e=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(y,function(e,n){t[e]||(t[e]=n)});var n=a();s("mark",["onload",n+b.offset],null,"api"),s("timing",["load",n]);var r=p.createElement("script");r.src="https://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===p.readyState&&o()}function o(){s("mark",["domContent",a()+b.offset],null,"api")}function a(){return R.exists&&performance.now?Math.round(performance.now()):(c=Math.max((new Date).getTime(),c))-b.offset}var c=(new Date).getTime(),s=t("handle"),f=t(22),u=t("ee"),d=t(20),l=window,p=l.document,h="addEventListener",m="attachEvent",w=l.XMLHttpRequest,v=w&&w.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:w,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var g=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1177.min.js"},x=w&&v&&v[h]&&!/CriOS/.test(navigator.userAgent),b=e.exports={offset:c,now:a,origin:g,features:{},xhrWrappable:x,userAgent:d};t(15),t(18),p[h]?(p[h]("DOMContentLoaded",o,!1),l[h]("load",r,!1)):(p[m]("onreadystatechange",i),l[m]("onload",r)),s("mark",["firstbyte",c],null,"api");var E=0,R=t(24)},{}],"wrap-function":[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var i=t("ee"),o=t(23),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,i){function nrWrapper(){var r,a,c,s;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){l([f,"",[r,a,i],c])}u(e+"start",[r,a,i],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,i,o){i||(i="");var a,c,s,f="-"===i.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+i:i,o,c))}function u(n,r,i){if(!s||e){var o=s;s=!0;try{t.emit(n,r,i,e)}catch(a){l([a,n,r,i])}s=o}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){l([r])}for(var i in t)c.call(t,i)&&(e[i]=t[i]);return e}function l(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=i),n.inPlace=f,n.flag=a,n}},{}]},{},["loader",2,12,4,3]);</script>      
+
+    <base href="https://app.monetizze.com.br/" target="_blank">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+ 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'> 
+
+    <!-- Font CSS  -->
+    <link rel="stylesheet" type="text/css" href="https://static.monetizze.com.br/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://static.monetizze.com.br/css/checkoutv3.css?v41.1.80.1598985874">
+    <link rel="stylesheet" type="text/css" href="https://static.monetizze.com.br/css/font-awesome.min.css"> 
+    <link rel="stylesheet" type="text/css" href="https://static.monetizze.com.br/css/checkout_v5_personalizado.css">
+    <link rel="stylesheet" type="text/css" href="https://static.monetizze.com.br/css/autocomplete-email.css">
+    
+  <meta name="robots" content="noindex" />
+
+    
+
+
+
+      <link rel="stylesheet" href="https://static.monetizze.com.br/vendor/plugins/notificacao/css/lobibox2.css?v41.1.80.1598985874"/>
+  
+
+    
+    <title>Guia do Score - Checkout</title> 
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://static.monetizze.com.br/img/favicon.ico?v=5">
+          <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-160872369-1', 'auto', 'clientTracker'); 
+        ga('clientTracker.send', 'pageview');
+      </script>
+     
+ 
+     
+ 
+     
+
+ 
+
+
+
+    
+             <!-- Hotjar Tracking Code for https://app.monetizze.com.br // Marcio motta -->
+           <script>
+                  (function(h,o,t,j,a,r){
+                      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                      h._hjSettings={hjid:141076,hjsv:5};
+                      a=o.getElementsByTagName('head')[0];
+                      r=o.createElement('script');r.async=1;
+                      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                      a.appendChild(r);
+                  })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+              </script>
+     
+
+<style type="text/css">
+    #produto{
+ /*      margin-top: 58px; */
+    }
+
+.form-group {
+    margin-bottom: 5px !important;
+}
+input:not([type=radio]), select {
+    height: 43px !important;
+}
+
+
+
+</style>
+
+
+
+
+
+
+                    <script type=text/javascript>
+                      (function(b,a){
+                       var link_atual = a.pathname+""+a.search;
+
+                       history.replaceState(null,document.title,a.pathname+"#!/rescue");                       
+                       history.pushState(null,document.title,link_atual);
+ 
+                        b.addEventListener("popstate",function(){
+                            if(a.hash==="#!/rescue"){
+                                history.replaceState(null,document.title,a.pathname);
+
+                                setTimeout(function(){
+                                    bioEp_init();
+                                    bioEp_vibrate();
+                                },0)
+                            }
+                        },false)
+                      }(window,location));
+                    </script>
+                      <script type="text/javascript">
+                              function bioEp_init() {
+                                bioEp.init({
+                                    width: 825,
+                                    height: 445,
+                                   delay: 0,
+                                   showOnDelay: true,
+                                    html: '<div class="wrapper"><div class="h_iframe"><iframe  width="100%" height="100%" src="https://app.monetizze.com.br/checkout/alertaDesconto?porc=11&urlCupom=https%3A%2F%2Fapp.monetizze.com.br%2Fcheckout%2FCSV78404%3Fa%3Da" frameborder="0" allowfullscreen></iframe></div></div>"',
+                                   cookieExp: 0
+                                    //css: ' .h_iframe {position:relative;} .h_iframe .ratio {display:block;width:100%;height:auto;} .h_iframe iframe {position:absolute;top:0;left:0;width:100%; height:495px;} .wrapper {width:80%;height:100%;margin:0 auto;background:#CCC} #bio_ep_bg{opacity: 0.8;}#bio_ep{background: none !important; box-shadow: none !important; top: 45%;}#bio_ep_close {margin: 19px 0 0 -123px; background: none; z-index: 99999; font-size: 16px;}'
+                                });
+                              }
+                              function bioEp_vibrate() {
+                                navigator.vibrate=navigator.vibrate||navigator.webkitVibrate||navigator.mozVibrate||navigator.msVibrate;
+                                if (navigator.vibrate !== undefined) {
+                                    navigator.vibrate([1000,500,1000,500,1000,500,1000,500,1000,1000,500,1000,500,1000,500,1000,500,1000]);
+                                }
+                              }
+                             </script>
+
+
+                    <script type="text/javascript">
+                           window.bioEp = {
+                               bgEl: {},
+                               popupEl: {},
+                               closeBtnEl: {},
+                               shown: !1,
+                               overflowDefault: "visible",
+                               transformDefault: "",
+                               width: 400,
+                               height: 220,
+                               html: "",
+                               css: "",
+                               fonts: [],
+                               delay: 5,
+                               showOnDelay: !1,
+                               cookieExp: 30,
+                               cookieManager: {
+                                   create: function(a, b, d) {
+                                       var c = "";
+                                       d && (c = new Date, c.setTime(c.getTime() + 864E5 * d), c = "; expires=" + c.toGMTString());
+                                       document.cookie = a + "=" + b + c + "; path=/"
+                                   },
+                                   get: function(a) {
+                                       a += "=";
+                                       for (var b = document.cookie.split(";"), d = 0; d < b.length; d++) {
+                                           for (var c = b[d];
+                                               " " == c.charAt(0);) c = c.substring(1, c.length);
+                                           if (0 === c.indexOf(a)) return c.substring(a.length,
+                                               c.length)
+                                       }
+                                       return null
+                                   },
+                                   erase: function(a) {
+                                       this.create(a, "", -1)
+                                   }
+                               },
+                               checkCookie: function() {
+                                   if (0 >= this.cookieExp) return this.cookieManager.erase("bioep_shown"), !1;
+                                   if ("true" == this.cookieManager.get("bioep_shown")) return !0;
+                                   this.cookieManager.create("bioep_shown", "true", this.cookieExp);
+                                   return !1
+                               },
+                               addCSS: function() {
+                                   for (var a = 0; a < this.fonts.length; a++) {
+                                       var b = document.createElement("link");
+                                       b.href = this.fonts[a];
+                                       b.type = "text/css";
+                                       b.rel = "stylesheet";
+                                       document.head.appendChild(b)
+                                   }
+                                   a = document.createTextNode("#bio_ep_bg {display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #000; opacity: 0.3; z-index: 10001;}#bio_ep {display: none; position: fixed; width: " +
+                                       this.width + "px; height: " + this.height + "px; font-family: 'Titillium Web', sans-serif; font-size: 16px; left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%); -webkit-transform: translateX(-50%) translateY(-50%); -ms-transform: translateX(-50%) translateY(-50%); background-color: #fff; box-shadow: 0px 1px 4px 0 rgba(0,0,0,0.5); z-index: 10002;}#bio_ep_close {position: absolute; left: 100%; margin: -8px 0 0 -12px; width: 20px; height: 20px; color: #fff; font-size: 12px; font-weight: bold; text-align: center; border-radius: 50%; background-color: #5c5c5c; cursor: pointer;}" +
+                                       this.css);
+                                   b = document.createElement("style");
+                                   b.type = "text/css";
+                                   b.appendChild(a);
+                                   document.head.insertBefore(b, document.getElementsByTagName("style")[0])
+                               },
+                               addPopup: function() {
+                                   this.bgEl = document.createElement("div");
+                                   this.bgEl.id = "bio_ep_bg";
+                                   document.body.appendChild(this.bgEl);
+                                   document.getElementById("bio_ep") ? this.popupEl = document.getElementById("bio_ep") : (this.popupEl = document.createElement("div"), this.popupEl.id = "bio_ep", this.popupEl.innerHTML = this.html, document.body.appendChild(this.popupEl));
+                                   this.closeBtnEl =
+                                       document.createElement("div");
+                                   this.closeBtnEl.id = "bio_ep_close";
+                                   this.closeBtnEl.appendChild(document.createTextNode("X"));
+                                   this.popupEl.insertBefore(this.closeBtnEl, this.popupEl.firstChild)
+                               },
+                               showPopup: function() {
+                                   this.shown || (this.bgEl.style.display = "block", this.popupEl.style.display = "block", this.scalePopup(), this.overflowDefault = document.body.style.overflow, document.body.style.overflow = "hidden", this.shown = !0)
+                               },
+                               hidePopup: function() {
+                                   this.bgEl.style.display = "none";
+                                   this.popupEl.style.display = "none";
+                                   document.body.style.overflow =
+                                       this.overflowDefault
+                               },
+                               scalePopup: function() {
+                                   var a = bioEp.popupEl.offsetWidth,
+                                       b = bioEp.popupEl.offsetHeight,
+                                       d = window.innerWidth,
+                                       c = window.innerHeight,
+                                       e = 0,
+                                       f = 0,
+                                       g = a / b;
+                                   a > d - 40 && (e = d - 40, f = e / g, f > c - 40 && (f = c - 40, e = f * g));
+                                   0 === f && b > c - 40 && (e = (c - 40) * g);
+                                   a = e / a;
+                                   if (0 >= a || 1 < a) a = 1;
+                                   "" === this.transformDefault && (this.transformDefault = window.getComputedStyle(this.popupEl, null).getPropertyValue("transform"));
+                                   this.popupEl.style.transform = this.transformDefault + " scale(" + a + ")"
+                               },
+                               addEvent: function(a, b, d) {
+                                   a.addEventListener ? a.addEventListener(b,
+                                       d, !1) : a.attachEvent && a.attachEvent("on" + b, d)
+                               },
+                               loadEvents: function() {
+                                   this.addEvent(document, "mouseout", function(a) {
+                                       a = a ? a : window.event;
+                                       a.relatedTarget || a.toElement || bioEp.showPopup()
+                                   });
+                                   this.addEvent(this.closeBtnEl, "click", function() {
+                                       bioEp.hidePopup()
+                                   });
+                                   this.addEvent(window, "resize", function() {
+                                       bioEp.scalePopup()
+                                   })
+                               },
+                               setOptions: function(a) {
+                                   this.width = "undefined" === typeof a.width ? this.width : a.width;
+                                   this.height = "undefined" === typeof a.height ? this.height : a.height;
+                                   this.html = "undefined" === typeof a.html ? this.html :
+                                       a.html;
+                                   this.css = "undefined" === typeof a.css ? this.css : a.css;
+                                   this.fonts = "undefined" === typeof a.fonts ? this.fonts : a.fonts;
+                                   this.delay = "undefined" === typeof a.delay ? this.delay : a.delay;
+                                   this.showOnDelay = "undefined" === typeof a.showOnDelay ? this.showOnDelay : a.showOnDelay;
+                                   this.cookieExp = "undefined" === typeof a.cookieExp ? this.cookieExp : a.cookieExp
+                               },
+                               domReady: function(a) {
+                                   "interactive" === document.readyState || "complete" === document.readyState ? a() : this.addEvent(document, "DOMContentLoaded", a)
+                               },
+                               init: function(a) {
+                                   "undefined" !==
+                                   typeof a && this.setOptions(a);
+                                   this.addCSS();
+                                   this.domReady(function() {
+                                       bioEp.checkCookie() || (bioEp.addPopup(), setTimeout(function() {
+                                           bioEp.loadEvents();
+                                           bioEp.showOnDelay && bioEp.showPopup()
+                                       }, 1E3 * bioEp.delay))
+                                   })
+                               }
+                           };
+                        </script>
+                      <script type="text/javascript">
+                               bioEp.init({
+                                   width: 825,
+                                   height: 445,
+                                   html: '<div class="wrapper"><div class="h_iframe"><iframe width="100%" height="100%" src="https://app.monetizze.com.br/checkout/alertaDesconto?porc=11&urlCupom=https%3A%2F%2Fapp.monetizze.com.br%2Fcheckout%2FCSV78404%3Fa%3Da" frameborder="0" allowfullscreen></iframe></div></div>"',
+                                   delay: 1,
+                                   cookieExp: 1,
+                                  css: '.wrapper {width:80%;height:100%;margin:0 auto;background:#CCC} #bio_ep_bg{opacity: 0.8;}#bio_ep{background: none !important; box-shadow: none !important; top: 45%;}#bio_ep_close {margin: 19px 0 0 -123px; background: none; z-index: 99999; font-size: 16px;}'
+                               });
+                            </script>
+
+
+
+              
+
+
+
+
+
+
+  </head>
+<body>
+ 
+ 
+        <iframe width='0px' height='0px' style='display: none;' src='https://app.monetizze.com.br/facebook/pixel/?id=%7B%22id%22%3A%22%22%2C%22track%22%3A%5B%5B%22PageView%22%5D%2C%5B%22InitiateCheckout%22%2C%22%22%5D%5D%7D'></iframe> 
+
+
+ 
+<div class="container-fluid" id="conteudo" style="padding-right: 0px;padding-top: 0px;padding-left: 0px;margin-right: 0px;"> 
+
+
+
+      <style type="text/css">
+         @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+      div#divContador {
+        height: 59px;
+        background-color: #FFD302; 
+        border-bottom: 1px solid #000;
+        padding: 0px;
+        position: fixed;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+        top: 0;
+
+      }
+      div#contadorConteudo{
+            height: 55px
+      }
+      div#contatorTexto, #contadorAcabou{
+        float: left;    
+        height: 55px; 
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 54px;
+        padding-left: 10px !important;
+      }
+    div#contatorTempoBtn {
+        /*margin-top: 12px;*/
+    }
+
+
+
+    .btn {
+        padding: 9px 10px 8px;
+        width: 100%;
+        margin: 0;
+        font-size: 22px;
+        font-weight: 700;
+        color: #fff;
+        border: 1px solid #aeaeae;
+        position: relative; 
+        background-image: none!important;
+        cursor: pointer;
+        text-decoration: none!important;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all .1s linear;
+        transition: all .1s linear;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+    } 
+    button{
+
+        font: inherit;
+        -webkit-appearance: none!important;
+    }
+
+     .btn-comprar {
+        width: 240px;
+        float: right;
+        margin-top: 5px;
+        margin-right: 10px;
+    }
+    .btn-green, .field-color .rich-color-picker-submit {
+        border-color: #568e34;
+        background-color: #6cb342;
+    }
+    #contador {
+        margin-top: 10px;
+        margin-right: 74px;
+        float: right;
+    }
+    span.contador_bloco {
+        float: left;
+        width: 50px;
+    }
+    span.contador_valor {
+        background-color: #fff;
+        font-size: 30px;
+        width: 45px;
+        margin-right: 3px;
+        display: table-cell;
+        text-align: center;
+        font-weight: bold;
+        line-height: 28px;
+    }
+    .contador_legenda{
+        font-size: 10px;
+        text-align: center;
+    }
+
+         
+         #parcelas div {
+         float: left;
+         border: 0;
+         margin: 0 5px;
+         padding: 7px 0px;
+         width: 50px;
+         text-align: center;
+         height: 40px;
+         }
+         #legenda div {
+         float: left;
+         font-size: 11px;
+         text-align: center;
+         margin: 0 5px;
+         width: 50px;
+         color: #ffffff;
+         }
+         .navbar-fixed-top {
+         min-height: 50px;
+         padding: 7px 0;
+         }
+         .navbar-fixed-top h3{
+         position: relative;
+         top: 15px;
+         color: #ffffff;
+         margin: 0;
+         font-family: 'Montserrat', sans-serif;
+         font-weight: bold;
+         font-size: 21px;
+         }
+         .numero{
+         font-weight: bold;
+         font-size: 21px;
+         color: #000;
+         background: #f5f5f5;
+         border-radius: 6px;
+         font-family: 'Montserrat', sans-serif;
+         }
+         .comprar button{
+         background: #00b000;
+         font-weight: bold;
+         width: 100%;
+         color: #fff;
+         font-size: 18px;
+         font-family: 'Montserrat', sans-serif;
+         position: relative;
+         top: 2px;
+         }
+         .comprar button:hover{
+         background: #00b040;
+         font-weight: bold;
+         width: 100%;
+         color: #fff !important;
+         font-size: 18px;
+         font-family: 'Montserrat', sans-serif;
+         position: relative;
+         top: 2px;
+         border: 0;
+         }
+         .navbar-fixed-top{
+            /*padding: 25px 0;*/
+            background: #ff0000;
+            display: block;
+            position: inherit;
+            margin-bottom: 0px !important; 
+         }
+         @media screen and (max-width: 767px){
+         .tempo {
+         width: 200px;
+         height: 200px;
+         margin-left: -100px;
+         margin-bottom: -130px;
+         margin-top: 20px;
+         top: 50%;
+         left: 50%;
+         }
+         .navbar-fixed-top{
+            padding: 25px 0;
+            background: #ff0000;
+         }
+         .navbar-fixed-top h3{
+         text-align: center;
+         top: 0;
+         font-size: 18px;
+         }
+         }
+         @media (min-width: 767px) and (max-width: 1023px){
+         .navbar-fixed-top h3 {
+         margin-bottom: 30px;
+         text-align: center;
+         }
+         .comprar {
+         right: 10%;
+         bottom: 5px;
+         }
+         .tempo {
+         left: 15%;
+         }
+         }
+         @media (min-width: 1023px) and (max-width: 1279px){
+         .navbar-fixed-top h3{
+         font-size: 17px;
+         }
+         #parcelas div{
+         width: 40px;
+         }
+         #legenda div{
+         width: 37px;
+         }
+         }
+      </style>
+         <input type="hidden" id="contador_hora" value="00">
+         <input type="hidden" id="contador_min" value="05">
+         <input type="hidden" id="contador_seg" value="00">
+        <nav  class="navbar navbar-default navbar-fixed-top">
+         <div class="container">
+            <div class="row">
+               <div class="col-xs-12 col-sm-12 col-md-7 col-gl-7">
+                  <h3>N&atilde;o perca a promo&ccedil;&atilde;o. O valor vai aumentar em:</h3>
+               </div>
+               <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2 tempo">
+                  <div class="row">
+                     <div id="parcelas">
+                        <div class="numero"></div>
+                        <div class="numero"></div>
+                        <div class="numero"></div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div id="legenda">
+                        <div>Horas</div>
+                        <div>Minutos</div>
+                        <div>Segundos</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 comprar">
+                  <a href="#" id="btn-comprar"><button  type="button" class="btn btn-sucess btn-comprar">Comprar Agora <i class="fa fa-arrow-down" aria-hidden="true"></i></button></a>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <script src="/js/jquery-v1.11.1.js"></script>
+      <script src="/js/bootstrap.min.3.3.6.js"></script>
+
+    <script type="text/javascript" src="//static.monetizze.com.br/vendor/plugins/scrollto/jquery.scrollTo-1.4.3.1-min.js"></script>
+
+<script type="text/javascript">
+
+   var horas = document.getElementById("contador_hora").value;
+   var minutos = document.getElementById("contador_min").value;
+   var segundos = document.getElementById("contador_seg").value;
+   var divs = document.querySelectorAll('#parcelas div');
+   
+   setInterval(function () {
+      if(horas+minutos+segundos > 0){
+         if(segundos > 0){
+            segundos --;
+            if(segundos < 10){
+               segundos = "0" + segundos;
+            }
+         }else if(segundos == 00 && minutos > 0){
+            minutos --;
+            segundos = 59;
+            if(minutos < 10){
+               minutos = "0" + minutos;
+            }
+         }else if(minutos == 00 && horas > 0){
+            horas --;
+            minutos = 59;
+            segundos = 59;
+            if(horas < 10){
+               horas = "0" + horas;
+            }
+         }
+      }else{
+         horas = "00";
+         minutos = "00";
+         segundos = "00";
+      }
+
+      var contador = [horas, minutos, segundos].forEach(function (parcela, i) {
+         divs[i].innerHTML = parcela;
+      });
+   }, 1000);
+   
+  jQuery(function($) {
+  
+    $("body").on("click", "#btn-comprar", function(e) {
+      $.scrollTo('#dados_cadastrais', 500); 
+      $('#nome').focus();
+      return false;
+    });
+  });
+</script>
+<script src="https://use.fontawesome.com/5706dba985.js"></script>
+
+
+
+
+<!-- INICIO BLOCO PRODUTO TOPO -->
+<!-- Se for ecommerce, some com esse bloco -->
+
+
+
+  <div class="col-lg-8 col-lg-offset-2 col-md-12  col-xs-12 padding-l-r-zero">
+    <div class="panel panel-default padding-l-r-zero" id="produto">
+
+
+
+    
+
+
+  <div class="panel-body" style=" text-align: center; padding: 0px;"> 
+
+
+
+      
+
+
+
+
+
+        <div style="/*background-color: #038583 */">
+          <img class="" src="https://static.monetizze.com.br/checkout/img/97811/f97455d60ddedd891d391f18009231e3.png" alt=""  style="margin: 0 auto;width: 100%; height-min: 30px;"  >
+        </div>
+
+
+
+      </div>
+
+
+
+
+
+
+
+      <div class="panel-footer"  > 
+                  Vendedor:  contato@guiadoscore.com.br 
+                 <!--   - Este é um produto digital, você receberá os dados para acessá-lo via internet. -->
+         
+      </div> 
+
+      </div>
+  </div>
+
+<!-- FIM BLOCO PRODUTO TOPO -->
+<!-- fechando bloco do if que verifica se é ecommerce ou não,
+e se for, apaga esse bloco. -->
+    
+
+  <form name="formDados" id="formDados" method="POST" action="javascript:void(null);" >
+
+    <input type="hidden" value="PUU97811" name="referencia" id="referencia" />
+    <input type="hidden" value="d164cdffee4f13f4607d02fb111d2235" name="cc" id="cc" />
+    <input type="hidden" value="2" name="formato_produto" id="formato_produto" />
+    <input type="hidden" value="" name="cupomValidado" id="cupomValidado" />
+    <input type="hidden" value="" name="is_ecommerce" id="is_ecommerce" />
+
+    
+
+
+
+  <div style=" padding-left: 0;" class="  col-lg-offset-2 col-md-8 col-lg-5 col-xs-12  ">
+
+
+            
+
+    <div class="col-lg-12  col-xs-12 padding-l-r-zero " style="margin-bottom: 15px;">
+
+
+
+    <div class="panel panel-default" id="dados_cadastrais">
+      <div class="panel-heading">
+        <h1>
+          1 - Dados cadastrais        </h1>
+      </div>
+      <div class="panel-body">
+
+
+          <div class="form-group text-center " id="tipoPessoa">
+              <label><input type="radio" value="1" checked name="pessoa" /> Brasileiro</label>
+                          <label style="margin-left: 30px;"><input type="radio" value="2" name="pessoa" /> Estrangeiro</label>
+                      </div> 
+
+          
+          <div class="form-group">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo"
+            class="form-control ca" maxlength="200"
+
+
+            
+            value="Cillainy Matias da Silva" />
+          </div>
+
+
+          <div class="form-group">
+            <label for="email" style="margin-right: 10px;">E-mail </label>  
+            <input type="text" id="email" name="email" placeholder="Digite seu melhor e-mail" class="form-control ca" maxlength="200"
+
+            
+            value="cilla.matias16@gmail.com" data-obgt="1" />
+          </div>
+        
+
+          
+          <div class="form-group esconder" id="divPais">
+            <label for="pais">País</label>
+            
+            <select class="form-control ca" name="pais" id="pais"> 
+              <option value="BR" selected="selected">Brasil</option> 
+              <option value="AF">Afghanistan </option>
+              <option value="AX">Aland Islands</option>
+              <option value="AL">Albania </option>
+              <option value="DZ">Algeria </option>
+              <option value="AS">American Samoa  </option>
+              <option value="AD">Andorra </option>
+              <option value="AO">Angola  </option>
+              <option value="AI">Anguilla  </option>
+              <option value="AQ">Antarctica  </option>
+              <option value="AG">Antigua and Barbuda </option>
+              <option value="AR">Argentina </option>
+              <option value="AM">Armenia </option>
+              <option value="AW">Aruba </option>
+              <option value="AU">Australia </option>
+              <option value="AT">Austria </option>
+              <option value="AZ">Azerbaijan  </option>
+              <option value="BS">Bahamas </option>
+              <option value="BH">Bahrain </option>
+              <option value="BD">Bangladesh  </option>
+              <option value="BB">Barbados  </option>
+              <option value="BY">Belarus </option>
+              <option value="BE">Belgium </option>
+              <option value="BZ">Belize  </option>
+              <option value="BJ">Benin </option>
+              <option value="BM">Bermuda </option>
+              <option value="BT">Bhutan  </option>
+              <option value="BO">Bolivia </option>
+              <option value="BA">Bosnia and Herzegovina  </option>
+              <option value="BW">Botswana  </option>
+              <option value="BV">Bouvet Island </option>
+              <option value="IO">British Indian Ocean Territory  </option>
+              <option value="BN">Brunei Darussalam </option>
+              <option value="BG">Bulgaria  </option>
+              <option value="BF">Burkina Faso  </option>
+              <option value="BI">Burundi </option>
+              <option value="CI">Côte d'Ivoire  </option>
+              <option value="KH">Cambodia  </option>
+              <option value="CM">Cameroon  </option>
+              <option value="CA">Canada  </option>
+              <option value="CV">Cape Verde  </option>
+              <option value="KY">Cayman Islands  </option>
+              <option value="CF">Central African Republic  </option>
+              <option value="TD">Chad  </option>
+              <option value="CL">Chile </option>
+              <option value="CN">China </option>
+              <option value="CX">Christmas Island  </option>
+              <option value="CC">Cocos (Keeling) Islands </option>
+              <option value="CO">Colombia  </option>
+              <option value="KM">Comoros </option>
+              <option value="CG">Congo </option>
+              <option value="CD">Congo, The Democratic Republic of the </option>
+              <option value="CK">Cook Islands  </option>
+              <option value="CR">Costa Rica  </option>
+              <option value="HR">Croatia </option>
+              <option value="CU">Cuba  </option>
+              <option value="CY">Cyprus  </option>
+              <option value="CZ">Czech Republic  </option>
+              <option value="DK">Denmark </option>
+              <option value="DJ">Djibouti  </option>
+              <option value="DM">Dominica  </option>
+              <option value="DO">Dominican Republic  </option>
+              <option value="EC">Ecuador </option>
+              <option value="EG">Egypt </option>
+              <option value="SV">El Salvador </option>
+              <option value="GQ">Equatorial Guinea </option>
+              <option value="ER">Eritrea </option>
+              <option value="EE">Estonia </option>
+              <option value="ET">Ethiopia  </option>
+              <option value="FK">Falkland Islands (Malvinas) </option>
+              <option value="FO">Faroe Islands </option>
+              <option value="FJ">Fiji  </option>
+              <option value="FI">Finland </option>
+              <option value="FR">France  </option>
+              <option value="GF">French Guiana </option>
+              <option value="PF">French Polynesia  </option>
+              <option value="TF">French Southern Territories </option>
+              <option value="GA">Gabon </option>
+              <option value="GM">Gambia  </option>
+              <option value="GE">Georgia </option>
+              <option value="DE">Germany </option>
+              <option value="GH">Ghana </option>
+              <option value="GI">Gibraltar </option>
+              <option value="GR">Greece  </option>
+              <option value="GL">Greenland </option>
+              <option value="GD">Grenada </option>
+              <option value="GP">Guadeloupe  </option>
+              <option value="GU">Guam  </option>
+              <option value="GT">Guatemala </option>
+              <option value="GG">Guernsey  </option>
+              <option value="GN">Guinea  </option>
+              <option value="GW">Guinea-Bissau </option>
+              <option value="GY">Guyana  </option>
+              <option value="HT">Haiti </option>
+              <option value="HM">Heard Island and McDonald Islands </option>
+              <option value="VA">Holy See (Vatican City State) </option>
+              <option value="HN">Honduras  </option>
+              <option value="HK">Hong Kong </option>
+              <option value="HU">Hungary </option>
+              <option value="IS">Iceland </option>
+              <option value="IN">India </option>
+              <option value="ID">Indonesia </option>
+              <option value="IR">Iran, Islamic Republic of </option>
+              <option value="IQ">Iraq  </option>
+              <option value="IE">Ireland </option>
+              <option value="IM">Isle of Man </option>
+              <option value="IL">Israel  </option>
+              <option value="IT">Italy </option>
+              <option value="JM">Jamaica </option>
+              <option value="JP">Japan </option>
+              <option value="JE">Jersey  </option>
+              <option value="JO">Jordan  </option>
+              <option value="KZ">Kazakhstan  </option>
+              <option value="KE">Kenya </option>
+              <option value="KI">Kiribati  </option>
+              <option value="KP">Korea, Democratic People&#39;s Republic of  </option>
+              <option value="KR">Korea, Republic of  </option>
+              <option value="KW">Kuwait  </option>
+              <option value="KG">Kyrgyzstan  </option>
+              <option value="LA">Lao People&#39;s Democratic Republic  </option>
+              <option value="LV">Latvia  </option>
+              <option value="LB">Lebanon </option>
+              <option value="LS">Lesotho </option>
+              <option value="LR">Liberia </option>
+              <option value="LY">Libyan Arab Jamahiriya  </option>
+              <option value="LI">Liechtenstein </option>
+              <option value="LT">Lithuania </option>
+              <option value="LU">Luxembourg  </option>
+              <option value="MO">Macao </option>
+              <option value="MK">Macedonia </option>
+              <option value="MG">Madagascar  </option>
+              <option value="MW">Malawi  </option>
+              <option value="MY">Malaysia  </option>
+              <option value="MV">Maldives  </option>
+              <option value="ML">Mali  </option>
+              <option value="MT">Malta </option>
+              <option value="MH">Marshall Islands  </option>
+              <option value="MQ">Martinique  </option>
+              <option value="MR">Mauritania  </option>
+              <option value="MU">Mauritius </option>
+              <option value="YT">Mayotte </option>
+              <option value="MX">Mexico  </option>
+              <option value="FM">Micronesia, Federated States of </option>
+              <option value="MD">Moldova, Republic of  </option>
+              <option value="MC">Monaco  </option>
+              <option value="MN">Mongolia  </option>
+              <option value="ME">Montenegro  </option>
+              <option value="MS">Montserrat  </option>
+              <option value="MA">Morocco </option>
+              <option value="MZ">Mozambique  </option>
+              <option value="MM">Myanmar </option>
+              <option value="NA">Namibia </option>
+              <option value="NR">Nauru </option>
+              <option value="NP">Nepal </option>
+              <option value="NL">Netherlands </option>
+              <option value="AN">Netherlands Antilles  </option>
+              <option value="NC">New Caledonia </option>
+              <option value="NZ">New Zealand </option>
+              <option value="NI">Nicaragua </option>
+              <option value="NE">Niger </option>
+              <option value="NG">Nigeria </option>
+              <option value="NU">Niue  </option>
+              <option value="NF">Norfolk Island  </option>
+              <option value="MP">Northern Mariana Islands  </option>
+              <option value="NO">Norway  </option>
+              <option value="OM">Oman  </option>
+              <option value="PK">Pakistan  </option>
+              <option value="PW">Palau </option>
+              <option value="PS">Palestinian Territory, Occupied </option>
+              <option value="PA">Panama  </option>
+              <option value="PG">Papua New Guinea  </option>
+              <option value="PY">Paraguay  </option>
+              <option value="PE">Peru  </option>
+              <option value="PH">Philippines </option>
+              <option value="PN">Pitcairn  </option>
+              <option value="PL">Poland  </option>
+              <option value="PT">Portugal  </option>
+              <option value="PR">Puerto Rico </option>
+              <option value="QA">Qatar </option>
+              <option value="RE">RÃƒÂ©union  </option>
+              <option value="RO">Romania </option>
+              <option value="RU">Russian Federation  </option>
+              <option value="RW">Rwanda  </option>
+              <option value="SH">Saint Helena  </option>
+              <option value="KN">Saint Kitts and Nevis </option>
+              <option value="LC">Saint Lucia </option>
+              <option value="MF">Saint Martin  </option>
+              <option value="PM">Saint Pierre and Miquelon </option>
+              <option value="VC">Saint Vincent and the Grenadines  </option>
+              <option value="WS">Samoa </option>
+              <option value="SM">San Marino  </option>
+              <option value="ST">Sao Tome and Principe </option>
+              <option value="SA">Saudi Arabia  </option>
+              <option value="SN">Senegal </option>
+              <option value="RS">Serbia  </option>
+              <option value="SC">Seychelles  </option>
+              <option value="SL">Sierra Leone  </option>
+              <option value="SG">Singapore </option>
+              <option value="SK">Slovakia  </option>
+              <option value="SI">Slovenia  </option>
+              <option value="SB">Solomon Islands </option>
+              <option value="SO">Somalia </option>
+              <option value="ZA">South Africa  </option>
+              <option value="GS">South Georgia and the South Sandwich Islands  </option>
+              <option value="ES">Spain </option>
+              <option value="LK">Sri Lanka </option>
+              <option value="SD">Sudan </option>
+              <option value="SR">Suriname  </option>
+              <option value="SJ">Svalbard and Jan Mayen  </option>
+              <option value="SZ">Swaziland </option>
+              <option value="SE">Sweden  </option>
+              <option value="CH">Switzerland </option>
+              <option value="SY">Syrian Arab Republic  </option>
+              <option value="TW">Taiwan  </option>
+              <option value="TJ">Tajikistan  </option>
+              <option value="TZ">Tanzania, United Republic of  </option>
+              <option value="TH">Thailand  </option>
+              <option value="TL">Timor-Leste </option>
+              <option value="TG">Togo  </option>
+              <option value="TK">Tokelau </option>
+              <option value="TO">Tonga </option>
+              <option value="TT">Trinidad and Tobago </option>
+              <option value="TN">Tunisia </option>
+              <option value="TR">Turkey  </option>
+              <option value="TM">Turkmenistan  </option>
+              <option value="TC">Turks and Caicos Islands  </option>
+              <option value="TV">Tuvalu  </option>
+              <option value="UG">Uganda  </option>
+              <option value="UA">Ukraine </option>
+              <option value="AE">United Arab Emirates  </option>
+              <option value="GB">United Kingdom  </option>
+              <option value="US">United States </option>
+              <option value="UM">United States Minor Outlying Islands  </option>
+              <option value="UY">Uruguay </option>
+              <option value="UZ">Uzbekistan  </option>
+              <option value="VU">Vanuatu </option>
+              <option value="VE">Venezuela, Bolivarian Republic of </option>
+              <option value="VN">Vietnam  </option>
+              <option value="VG">Virgin Islands, British </option>
+              <option value="VI">Virgin Islands, U.S.  </option>
+              <option value="WF">Wallis and Futuna </option>
+              <option value="EH">Western Sahara  </option>
+              <option value="YE">Yemen </option>
+              <option value="ZM">Zambia  </option>
+              <option value="ZW">Zimbabwe  </option>
+            </select>
+          </div>
+
+
+                    
+          <div id="divEnderecoEstrangeiro" class="esconder ">
+            <div class="form-group">
+              <label for="endereco">Endereço</label> 
+              <input type="text" id="enderecoEstrangeiro"  name="endereco_estrangeiro" class="form-control  ca" maxlength="200"
+
+              
+              value="" />
+            </div>
+          </div>
+
+          
+          
+          <div class="form-group-two col-sm-12" style="padding-left: 0; padding-right: 0;" id="divTelefoneCPF">
+  
+            
+
+                      <div class="form-group " id="divTelefone">
+              <label for="telefone">
+
+                Celular com DDD                    
+
+                  </label>  
+              <div class="input-container"  >
+                <input 
+
+
+                 type="text" 
+            
+                 id="telefone"  name="telefone" class="form-control telefone  ca" maxlength="20"  value="" />
+                <!-- <i class="fa fa-question-circle infoTelefone" ></i> -->
+              </div>
+            </div>
+
+                    
+            <div class="form-group right  " id="divCPF">
+              <label for="cnpj_cpf" id="lblCPF">CPF/CNPJ</label> 
+              <input 
+
+
+                 type="text" 
+               id="cnpj_cpf"  name="cnpj_cpf" class="form-control ca" maxlength="18"
+
+                
+               value="10831064498" />  
+            </div>
+
+                    
+          </div>
+
+                    
+
+          
+
+
+
+          
+
+          <div class="form-group esconder "  id="divNasc">
+            <label for="data_nascimento">Data nascimento (99/99/9999)</label> 
+            <input type="text" id="data_nascimento"  name="data_nascimento" class="form-control  ca" maxlength="10"
+
+            
+            value="13/10/1996" />
+          </div>
+
+          <div class="form-group-two esconder" id="divCep">
+            <div class="form-group">
+
+              <label for="cep">CEP</label> 
+              <input 
+
+                 type="text" 
+               id="cep"  name="cep" class="form-control cep  ca" autocomplete="off" maxlength="9"
+
+                
+               value="" />
+              
+            </div>
+
+            
+          <div class="form-group right" style="height: 75px;">
+   <!-- 
+              <a href="#" class="btn btn-primary btnBuscarEnd"  data-loading-text="Buscando endereço" role="button" id="buscarEndereco">Buscar Endereço</a>  
+               -->
+            </div>
+
+            
+          </div>
+
+        <div class="clearfix"></div>
+
+        <div id="divEndereco" class="esconder ">
+
+
+          <div class="form-group">
+            <label for="endereco">Endereço</label> 
+            <input type="text" id="endereco"  name="endereco" class="form-control  ca" maxlength="200"
+
+            
+            value="" />
+          </div>
+
+
+          <div class="form-group-two">
+            <div class="form-group">
+
+              <label for="numero">Número</label> 
+              <input type="text" placeholder="Número do endereço" id="numero"  name="numero" class="form-control ca" maxlength="100"
+
+                
+              value="" />
+              
+            </div>
+            <div class="form-group right">
+ 
+              <label for="complemento">Complemento</label> 
+              <input type="text" id="complemento"  name="complemento" class="form-control  ca" maxlength="150"
+
+              
+              value="" />
+            </div>
+
+          </div>
+              
+          <div class="clearfix"></div>
+
+          <div class="form-group">
+            <label for="bairro">Bairro</label> 
+            <input type="text" id="bairro"  name="bairro" class="form-control  ca" maxlength="100"
+
+            
+            value="" />
+          </div>
+
+
+
+          <div class="form-group-two">
+            <div class="form-group ">
+ 
+              <label for="cidade">Cidade</label> 
+              <input type="text" id="cidade"  name="cidade" class="form-control  ca" maxlength="100"
+
+              
+              value="" />
+            </div>
+            <div class="form-group right">
+
+              <label for="estado">Estado</label> 
+              <!-- <input type="text" id="estado"  name="estado" class="form-control ca" maxlength="20"  value="" />  -->
+
+                <select class="form-control ca"  name="estado" id="estado"
+
+                                  >
+
+
+                <option value="--"  > -- </option><option value="AC"  > AC </option><option value="AL"  > AL </option><option value="AM"  > AM </option><option value="AP"  > AP </option><option value="BA"  > BA </option><option value="CE"  > CE </option><option value="DF"  > DF </option><option value="ES"  > ES </option><option value="GO"  > GO </option><option value="MA"  > MA </option><option value="MG"  > MG </option><option value="MS"  > MS </option><option value="MT"  > MT </option><option value="PA"  > PA </option><option value="PB"  > PB </option><option value="PE"  > PE </option><option value="PI"  > PI </option><option value="PR"  > PR </option><option value="RJ"  > RJ </option><option value="RN"  > RN </option><option value="RO"  > RO </option><option value="RR"  > RR </option><option value="RS"  > RS </option><option value="SC"  > SC </option><option value="SE"  > SE </option><option value="SP"  > SP </option><option value="TO"  > TO </option>              </select>
+               
+          </div>
+
+
+          </div>
+
+        </div>
+
+         
+
+        <div id="divEnviarDadosG" class="esconder">
+          <button id="PayButtonFree"  data-loading-text="Aguarde..."   class="btn btn-block btn-success submit-button" type="submit" >
+            <span class="submit-button-lock" ></span>
+            <span class="align-middle txtBtnPagar" > Enviar dados</span>
+          </button>
+        </div>
+
+
+      </div>
+
+
+
+    </div> <!-- Fim dos dados cadastrais -->
+  </div>
+
+  
+    <div class="col-lg-12 col-xs-12 padding-l-r-zero" id="divPagamento" style="margin-top: -18px;">
+      <div class="panel panel-default" id="pagamento"  style="margin-bottom: 0px;">
+      <div class="panel-heading">
+        <h1>
+          2 - Selecionar pagamento        </h1>
+      </div>
+      <div class="panel-body">
+          <!-- Template checkout padrão, com ABAS -->
+
+        <div class="tab-block margin-bottom-lg checkout-padrao__abas">
+            <ul class="nav nav-tabs">
+                            <li id="liCartao" class=" active  "><a href="#tab_cartao" data-toggle="tab" class="bandCartao noImage "><span class="fa fa-credit-card"></span> Cartão de Crédito</a></li>
+              
+              
+
+                            <li id="liBoleto" class="  esconder"><a href="#tab_boleto" data-toggle="tab" class="boleto noImage "><span class="fa fa-money"></span> Boleto</a></li>
+                                        </ul>
+            <div class="tab-content">
+
+
+
+
+              <div id="tab_cartao" class="tab-pane   active  ">
+                
+                      <div class="card-row">
+                        <span class="visa bandCartao" rev="visa"></span>
+                        <span class="mastercard bandCartao" rev="mastercard"></span>
+                        <span class="amex bandCartao" rev="amex"></span>
+                        <span class="dinersclub bandCartao"  rev="dinersclub"></span>
+                        <span class="elo bandCartao" rev="elo" ></span>
+                        <span class="hipercard bandCartao" rev="hipercard" ></span>
+                      </div>
+
+                      <div class="divCartao " >
+
+                        
+                        <div class="card-number form-group">
+                          <label for="CreditCardNumber">Número do cartão <span class="cc-brand"></span></label>
+                          <div class="input-container"  >
+                            <input 
+                             type="text"                              
+                              id="CreditCardNumber" autocomplete="off" name="CreditCardNumber" placeholder="Digite somente números" class=" card-image form-control"  value="" >
+                            <!-- <i class="fa fa-question-circle i_card_number" ></i> -->
+                          </div>
+                        </div>
+
+                        <div class="card-name form-group">
+                          <label for="NameOnCard">Seu Nome impresso no cartão</label>
+                          <div class="input-container"  >
+                            <input type="text" id="NameOnCard" autocomplete="off" name="NameOnCard"  placeholder="Seu nome impresso no cartão. Ex: Maria Fernanda" class="form-control" maxlength="255"  value="" >
+                            <!-- <i class="fa fa-question-circle i_card_name" ></i> -->
+                          </div>
+                        </div>
+
+
+
+                        <div class="expiry-date-group form-group" >
+                          <label for="ExpiryDate_month" >Validade</label>
+                          <div class="input-container"  >
+                            <select id="ExpiryDate_month" class="form-control"   name="ExpiryDate_month"
+                            style=" float: left;width: 64px;">
+                                <option value="01">01 - Janeiro</option>
+                                <option value="02">02 - Fevereiro</option>
+                                <option value="03">03 - Março</option>
+                                <option value="04">04 - Abril</option>
+                                <option value="05">05 - Maio</option>
+                                <option value="06">06 - Junho</option>
+                                <option value="07">07 - Julho</option>
+                                <option value="08">08 - Agosto</option>
+                                <option value="09">09 - Setembro</option>
+                                <option value="10" selected>10 - Outubro</option>
+                                <option value="11">11 - Novembro</option>
+                                <option value="12">12 - Dezembro</option>
+                            </select>
+                            <select id="ExpiryDate_year" class="form-control"  name="ExpiryDate_year"
+                            style="float: left;width: 112px;">
+                            <option value=2020 selected>2020</option><option value=2021>2021</option><option value=2022>2022</option><option value=2023>2023</option><option value=2024>2024</option><option value=2025>2025</option><option value=2026>2026</option><option value=2027>2027</option><option value=2028>2028</option><option value=2029>2029</option><option value=2030>2030</option>                            </select>
+                            <!-- <input type="text" maxlength="7" class="form-control" id="ExpiryDate"  name="ExpiryDate" placeholder="MM / AA"  value="
+                              "  > -->
+                          <!--   <i class="fa fa-question-circle i_card_exp" ></i>-->
+                          </div>
+                        </div>
+
+                        <div class="security-code-group form-group">
+                          <label for="SecurityCode" ><small>Digite o CVV / Código de segurança</small></label>
+                          <div class="input-container"  >
+                            <input 
+                             type="text"  class="form-control"  autocomplete="off" id="SecurityCode" name="SecurityCode"  value="" >
+                           <!--  <i class="fa fa-question-circle infoCVV" ></i> -->
+                          </div>
+                        </div>
+
+
+                      </div>
+
+
+
+              </div>
+
+
+              <!-- Conteúdo da tab de débito virtual caixa -->
+              <div id="tab_debito_virtual_caixa" class="tab-pane  ">
+<br>
+                <div class="debito_virtual_caixa_header">
+    <div class="debito_virtual_caixa_header--container-logo">
+        <span class="debito_virtual_caixa_header--logoCaixa"></span>
+        <div class="debito_virtual_caixa_header--text-container">
+            <span class="debito_virtual_caixa_header--context">Cartão de Débito Virtual</span>
+            <span class="debito_virtual_caixa_header--description">Auxílio Emergencial</span>
+        </div>
+    </div>
+
+    <div class="debito_virtual_caixa_header--daily-limit"><span>Limite diário para uso desse cartão R$ 1.000,00</span></div>
+</div>
+
+<!-- Campo de número de cartão -->
+<div class="card-number form-group">
+    <label for="CaixaVirtualDebitCardNumber">Número do cartão <span class="cc-brand"></span></label>
+    <div class="input-container">
+        <input id="CaixaVirtualDebitCardNumber" autocomplete="off" name="CaixaVirtualDebitCardNumber" placeholder="9999 9999 9999 9999" class=" card-image form-control" value="">
+    </div>
+</div>
+
+<!-- Campo de nome no cartão virtual -->
+<div class="card-name form-group">
+    <label for="CaixaVirtualDebitNameOnCard">Seu Nome no cartão virtual</label>
+    <div class="input-container">
+        <input type="text" id="CaixaVirtualDebitNameOnCard" autocomplete="off" name="CaixaVirtualDebitNameOnCard" placeholder="Maria Fernanda" class="form-control" maxlength="255" value="">
+    </div>
+</div>
+
+<div class="div-elo-debit__expiry-cvv-row">
+    <!-- Campos de data de vencimento do cartão -->
+    <div class="expiry-date-group form-group">
+        <div class="select-group">
+            <label for="CaixaVirtualDebitExpiryDate_month">Validade</label>
+            <div class="">
+                <select id="CaixaVirtualDebitExpiryDate_month" class="form-control" name="CaixaVirtualDebitExpiryDate_month" style=" float: left;width: 64px;">
+                    <option value="01">01 - Janeiro</option>
+                    <option value="02">02 - Fevereiro</option>
+                    <option value="03">03 - Março</option>
+                    <option value="04">04 - Abril</option>
+                    <option value="05">05 - Maio</option>
+                    <option value="06">06 - Junho</option>
+                    <option value="07">07 - Julho</option>
+                    <option value="08">08 - Agosto</option>
+                    <option value="09">09 - Setembro</option>
+                    <option value="10" selected>10 - Outubro</option>
+                    <option value="11">11 - Novembro</option>
+                    <option value="12">12 - Dezembro</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="select-group">
+            <div class="" style="margin-left: 8px">
+                <select id="CaixaVirtualDebitExpiryDate_year" class="form-control" name="CaixaVirtualDebitExpiryDate_year" style="width: 112px;">
+                    <option value=2020 selected>2020</option><option value=2021>2021</option><option value=2022>2022</option><option value=2023>2023</option><option value=2024>2024</option><option value=2025>2025</option><option value=2026>2026</option><option value=2027>2027</option><option value=2028>2028</option><option value=2029>2029</option><option value=2030>2030</option>                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="security-code-group form-group">
+        <label for="CaixaVirtualDebitSecurityCode"><small>Digite o Código de Segurança</small></label>
+        <div class="input-container">
+            <input  type="text"  class="form-control" autocomplete="off" id="CaixaVirtualDebitSecurityCode" name="CaixaVirtualDebitSecurityCode" placeholder="9999" value="">
+        </div>
+
+        <span class="debito_virtual_caixa--cvv-description">
+            <span class="debito_virtual_caixa--cvv-description--icon"><span class="fa fa-mobile"></span></span>
+            <span class="debito_virtual_caixa--cvv-description--text">Código de segurança gerado pelo App da Caixa.</span>
+        </span>
+    </div>
+</div>              
+              </div>
+
+
+
+
+              <div id="tab_boleto" class="tab-pane   ">
+                 
+                <div class="col-sm-12 imgTextoBoleto" style="margin-top: 30px">
+                  <div class="imgBoleto"><img src="https://static.monetizze.com.br/img/boleto.png" /></div>
+                  <div class="textoBoleto">
+                    <strong>Atenção:</strong><br>
+                    1 - Boleto (somente à vista)<br>
+                    2 - Pagamentos com Boleto Bancário levam até <strong>3 dias úteis</strong> para serem compensados e então terem os produtos liberados<br>
+                    3 - Depois do pagamento, fique atento ao seu e-mail para receber os dados de acesso ao produto (verifique também a caixa de SPAM)
+                  </div>
+                </div>
+     
+
+                  <div class="form-group right esconder " id="cpf_boleto" >
+                    <label for="cnpj_cpf_boleto" id="lblCPF">CPF/CNPJ</label> 
+                    <input type="text" id="cnpj_cpf_boleto"  name="cnpj_cpf_boleto" class="form-control ca" maxlength="18" value="10831064498" />  
+                  </div>
+
+
+              </div> 
+
+
+
+
+
+
+
+              <div id="tab_saldo" class="tab-pane ">
+                
+                
+
+                  <div class="col-sm-12"  style="margin-top: 30px">
+                    <div class="titSaldo">Comprar com o saldo Monetizze</div>
+                    <div class="">
+
+                      <div class="form-group">
+                        <label for="email_monetizze">E-mail </label>
+                        <input type="text" id="email_monetizze" name="email_monetizze" class="form-control" maxlength="200" value="cilla.matias16@gmail.com">
+                      </div>
+                        
+                      <div class="form-group">
+                        <label for="password">Senha </label>
+                        <input type="password" id="password" name="password" autocomplete="off" class="form-control" value="">
+                      </div>
+                        
+                    </div>
+
+                  </div>
+              </div>
+            </div>
+          </div>
+
+
+
+            <div class="clearfix" > </div>
+            <!-- frete -->
+
+            <input type="hidden" value='0' name="frete_valor" id="frete_valor" />
+
+            
+
+
+            <!-- frete -->
+
+            <div class="clearfix" > </div>
+                                      <input type="hidden" value='1' name="quantidade" id="quantidade" />
+            
+ 
+              
+              <div class="divValor form-group esconder">
+              <h3>R$  </h3>
+              </div>
+
+              <div class="parcelamento form-group ">
+                <label for="parcelamento" >Parcelamento</label>
+                  <select class="form-control"  name="parcelamento" id="parcelamento">
+                    <option data-parcelas="1" data-valor="97.00" value="1_97.00">1x de R$ 97,00</option>
+                    <option data-parcelas="2" data-valor="50.69" value="2_50.69" > 2x de R$ 50,69</option><option data-parcelas="3" data-valor="34.29" value="3_34.29" > 3x de R$ 34,29</option><option data-parcelas="4" data-valor="26.09" value="4_26.09" > 4x de R$ 26,09</option><option data-parcelas="5" data-valor="21.17" value="5_21.17" > 5x de R$ 21,17</option><option data-parcelas="6" data-valor="17.90" value="6_17.90" > 6x de R$ 17,90</option><option data-parcelas="7" data-valor="15.56" value="7_15.56" > 7x de R$ 15,56</option><option data-parcelas="8" data-valor="13.81" value="8_13.81" > 8x de R$ 13,81</option><option data-parcelas="9" data-valor="12.45" value="9_12.45" > 9x de R$ 12,45</option><option data-parcelas="10" data-valor="11.37" value="10_11.37" > 10x de R$ 11,37</option><option data-parcelas="11" data-valor="10.48" value="11_10.48" > 11x de R$ 10,48</option><option data-parcelas="12" data-valor="9.74" value="12_9.74" > 12x de R$ 9,74</option>                  </select>
+              </div>
+
+            
+
+
+          
+
+
+
+
+
+
+
+
+            <label id="labelUSD" class="form-group  esconder " style="font-size: 24px;text-align: center;width: 100%;"> 
+            R$ 97,00            </label>
+
+
+          
+                      <div class="pull-right possuiCupom" ><a href="javascript:void(null)" class="possuiCupom"  >Possui Cupom de desconto?</a></div>
+          
+          
+
+          <button id="PayButton"  data-loading-text="Aguarde..."   class="btn btn-block btn-success submit-button" type="submit" >
+            <!-- <span class="submit-button-lock" ></span> -->
+            <span class="align-middle txtBtnPagar" >Finalizar Compra</span>
+          </button>
+          
+            <!-- <div id="onclickbuy" ><input type="checkbox" checked value="1" name="onclickbuy" /> Habilitar compra com 1 click <i class="fa fa-question-circle infoonclickbuy" ></i></div> -->
+          <!-- <div class="pagamentoSeguro">Pagamento 100% Seguro </div> -->
+        
+            <div class="pagamentoSeguro">   <img src='https://static.monetizze.com.br/img/cadeado.jpg' alt="Você está em Ambiente Seguro. SSL criptografia 128 bits" /> </div>
+             - Este é um produto digital, você receberá os dados para acessá-lo via internet.      </div>
+    </div>
+    
+    <div style="height: auto;font-size: 10px;margin-bottom: 20px;">
+          </div>
+     
+      <h6 style="color: #b3b2b2;">*OBS.: Taxa de 2,99% a.m.</h6>
+  </div> 
+
+    </div>
+
+ 
+  
+
+  <div class="  col-md-4 col-lg-3 col-xs-12 " style="padding-right: 0px;"  >
+    <div  class="panel panel-default col-xs-12" id="detalhes" style="padding: 0px;"> 
+      <div class="panel-body padding-l-r-zero"  style="text-align: center;padding: 0px;"> 
+      
+        <img class="" src="https://static.monetizze.com.br/checkout/img/97811/b2e38c6abc11148eb324ef2e2e4954fd.png" alt=""  style="margin: 0 auto;width: 100%;">
+            </div>
+    </div>
+  </div>
+
+  
+
+  </form>
+  <div class=" col-sm-12 col-xs-12 rodape"
+> 
+ <a href="https://www.monetizze.com.br/termos#privacy" target="_blank" class="privacidade">Política de privacidade</a> | 
+ <a href="https://app.monetizze.com.br/termos_compra" target="_blank" class="privacidade">Termos de compra</a>
+  <!-- | <a href="#">Termos de compra</a> -->| Esta compra será processada pela Monetizze 
+</div>
+
+  </div>  
+  
+  <script src="https://h.online-metrix.net/fp/tags.js?org_id=9ozphlqx&session_id=d164cdffee4f13f4607d02fb111d2235" type="text/javascript"></script><noscript>
+             <iframe style="width: 100px; height: 100px; border: 0; position:absolute; top: -5000px;" src="https://h.online-metrix.net/fp/tags?org_id=9ozphlqx&session_id=d164cdffee4f13f4607d02fb111d2235"></iframe>
+  </noscript>
+
+    <script type="text/javascript">
+      var urlS3 = 'https://s3.amazonaws.com/alphamonetizze/';
+    </script>
+
+    <script type="text/javascript" src="//static.monetizze.com.br/js/jquery.min.js?"></script> 
+    <script type="text/javascript" src="//static.monetizze.com.br/vendor/plugins/validate/jquery.validate.min.js?"></script> 
+    <script type="text/javascript" src="//static.monetizze.com.br/vendor/plugins/validate/jquery.validate.cpf_cnpj.js?"></script> 
+    <script type="text/javascript" src="//static.monetizze.com.br/vendor/plugins/jquerymask/jquery.maskedinput.min.js?"></script>  
+    <script type="text/javascript" src="//static.monetizze.com.br/vendor/plugins/jquerypayment/jquery.payment.js?1.1.80.1598985874"></script>
+    <script type="text/javascript" src="//static.monetizze.com.br/js/bootstrap.min.js?"></script>
+    <script type="text/javascript" src="//static.monetizze.com.br/js/checkout_v5_personalizado.js?e21.1.80.1598985874"></script>
+
+
+    
+      <script type="text/javascript" src="//static.monetizze.com.br/vendor/plugins/notificacao/js/lobibox.js?ae21.1.80.1598985874"></script>    
+
+        <script type="text/javascript">
+            iconSource: 'fontAwesome'
+
+            var frases_ativas = 2;
+
+            var frases = [];
+
+            frase = {
+
+                                'style' : 'success',
+
+                                'icon' : 'fa fa-flag-checkered',
+
+                                'msg' : '<b>33</b> Pessoas estão comprando <b>Guia do Score</b> nesse momento'
+
+                              };
+
+                       frases.push(frase);
+frase = {
+
+                                'style' : 'info',
+
+                                'icon' : 'fa fa-flag-checkered',
+
+                                'msg' : '<b>233</b> Pessoas compraram <b>Guia do Score</b> hoje'
+
+                              };
+
+                       frases.push(frase);
+
+            var frases_ = frases.slice(0);
+ 
+            var intervalo = setInterval(function(){
+
+              if(frases_.length == 0){
+                // frases_ = frases.slice(0);
+                clearInterval(intervalo);
+                return;
+              }
+
+              id = Math.floor(Math.random()*frases_.length);
+
+              frase = frases_[id];
+
+              Lobibox.notify( 
+                frase.style,{
+                  size: 'mini',
+                  width: 400,
+                  messageHeight: 50,
+                  icon: frase.icon,
+                  delayIndicator: true,
+                  position: 'bottom left',
+                  msg: frase.msg,
+                  delay: 10000 
+                }
+              );
+
+              frases_.splice(id,1);
+
+            },12000);
+
+ 
+
+        </script>
+        
+
+  
+
+        <script>
+
+        $("#cep").mask("99999-999"); 
+        $("#data_nascimento").mask("99/99/9999");
+        $('#CaixaVirtualDebitCardNumber').mask('9999 9999 9999 9999');
+        $('#CaixaVirtualDebitSecurityCode').mask('999?9');
+
+          var $objTelefoneInter = $('.telefoneInter');
+          $objTelefoneInter.off('focusout');
+          $objTelefoneInter.on('focusout', function (event) {
+
+             $(this).mask("+999 (99)99999999?9");
+             var target, phone, element; 
+             if(event.currentTarget){ target = event.currentTarget;} else {  target = event.srcElement; } 
+             phone = target.value.replace(/\D/g, ''); 
+             element = $(target); 
+             element.unmask(); 
+             if(phone.length > 12) { 
+                 element.mask("+999 (99)99999-999?9"); 
+             } else { 
+                 element.mask("+999 (99)9999-9999?9"); 
+             } 
+          }).focusout();
+
+        var $objTelefone = $('.telefone');
+          $objTelefone.off('focusout');
+          $objTelefone.on('focusout', function (event) {
+
+             $(this).mask("(99)99999999?9");
+             var target, phone, element; 
+             if(event.currentTarget){ target = event.currentTarget;} else {  target = event.srcElement; } 
+             phone = target.value.replace(/\D/g, ''); 
+             element = $(target); 
+             element.unmask(); 
+             if(phone.length > 10) { 
+                 element.mask("(99)99999-999?9"); 
+             } else { 
+                 element.mask("(99)9999-9999?9"); 
+             } 
+          }).focusout();
+
+
+
+        </script>
+
+        
+    <script> 
+
+        var quantidade_max = '1';
+        var doisc = '';
+        var usandoDoisC = false;
+        var maxParcelas = '12';
+        var valor_unitario = '97.00';
+        var valor = '97.00';
+        var url_s3 = 'https://static.monetizze.com.br/'; 
+        var parcela_padrao = '1_97.00'; 
+        var solicitar_cpf = '1';
+        var solicitar_telefone = '1';
+        var solicitar_endereco = '0'; 
+        var solicitar_endereco_option = '0';
+        var formato_produto = '2';
+        var paypal = '0';
+        var m = '1';  
+        var pagInter = '0';  
+        var usar_frete = '0';  
+        var split = '';
+        defineValor();
+
+        var valores = [];
+        var valoresFormatado = [];
+         valores[1] = '97.00'; 
+ valoresFormatado[1] = '97,00'; 
+
+
+                  var recaptcha = false;
+          
+ 
+   
+
+
+//cnpj_cpf
+//cnpj_cpf_boleto
+
+
+
+    </script>
+    <script>
+            jQuery(function($) {
+             $('#pais').val('BR');$('input#estado').val('PE');buscarCEP(1);});</script>
+<script>var backRedirect="https://app.monetizze.com.br/r/BYT972341";function createBackRedirect(){var e={mon:"monetizze"};document.cookie="backRedirect=true",history.replaceState(e,document.title,window.location.pathname+"#/back-redirect"),history.pushState(e,document.title,window.location.pathname)}createBackRedirect(),window.onpopstate=function(e){"#/back-redirect"===window.location.hash&&setTimeout(function(){window.location.href=backRedirect},0)};</script>
+  <script>
+    jQuery(function($) {
+
+
+
+verificarCEP(1);
+
+      $("body").on("click", ".leiamais", function(e) {
+        e.preventDefault();
+        var titulo = "Guia do Score";
+        var descrProduto = "<span style='word-break:break-all;'>O Guia do Score &eacute; um guia desenvolvido pela Editora Curta onde mostra na pr&aacute;tica o passo a passo para voc&ecirc; aumentar o seu score de cr&eacute;dito no SPC, Serasa e Cadastro Positivo.</span>";
+
+        alerta({
+          id: 'modalLeiaMais',
+            titulo: titulo,
+            mensagem: descrProduto,
+            classWell : '',
+            well: false,
+            classeTamanho: 'modal-lg'
+        });
+
+      });
+
+    });
+
+    
+    if($('#divTelefone').hasClass('esconder') && $('#divCPF').hasClass('esconder')  ){
+      $('#divTelefoneCPF').addClass('esconder');
+    }
+
+  </script>
+  
+  
+
+    
+    
+
+    
+         
+                  
+         
+     
+    
+          
+     
+     
+     
+     
+
+     
+     
+
+    <script src="https://static.monetizze.com.br/js/jquery.mailtip.js?1.1.80.1598985874"></script>
+            
+    <script type="text/javascript">    
+      $(function (){
+        $('#email').mailtip();
+      });
+    </script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"3d0e4a751d","applicationID":"23982763","transactionName":"NV1XYkoHXURRUkcPWQwXYERRSUZFXB9DDkY=","queueTime":0,"applicationTime":171,"atts":"GRpUFAIdTko=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
